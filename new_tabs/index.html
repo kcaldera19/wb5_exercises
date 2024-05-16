@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button1">Click Me!</button>
+    <button id="button2">No Click Mee!</button>
+    <button id="button3">No Click Meee!</button>
+    
+
+    <script>
+        "use strict"
+        window.onload =()=>{
+            let button1 = document.querySelector("#button1");
+            let button2 = document.querySelector("#button2");
+            let button3 = document.querySelector("#button3");
+
+            button1.addEventListener("click", buttonOneClicked)
+            button2.addEventListener("click", buttonTwoClicked)
+            button3.addEventListener("click", buttonThreeClicked)
+
+        }
+        let buttonOneClicked = (event) => {
+            window.open("https://google.com")
+        }
+        let buttonTwoClicked = (event) => {
+            window.open("https://www.w3schools.com")
+        }
+        let buttonThreeClicked = (event) => {
+            
+            window.open("images.html","_self");
+            
+        }
+    </script>
+</body>
+</html>
