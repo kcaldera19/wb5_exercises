@@ -12,7 +12,9 @@ let cart = [
 let itemName = cart.map((cartItem)=>{
     return cartItem.item;
 })
+// can use sort since they are strings
 itemName.sort();
+
 itemName.forEach((item)=>{
     console.log(item);
 })
